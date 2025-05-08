@@ -45,10 +45,10 @@ $ python models/train/train_seq2seq.py --data data/json_feat_2.1.0 --model seq2s
 
 ## More Info 
 
-- [**Dataset**](data/): Downloading full dataset, Folder structure, JSON structure.
-- [**Models**](models/): Training and Evaluation, File structure, Pre-trained models.
-- [**Data Generation**](gen/): Generation, Replay Checks, Data Augmentation (high-res, depth, segementation masks etc).
-- [**Errata**](models/ERRATA.md): Updated numbers for Goto subgoal evaluation.
+- [**Dataset**](src/alfred/data/): Downloading full dataset, Folder structure, JSON structure.
+- [**Models**](src/alfred/models/): Training and Evaluation, File structure, Pre-trained models.
+- [**Data Generation**](src/alfred/gen/): Generation, Replay Checks, Data Augmentation (high-res, depth, segementation masks etc).
+- [**Errata**](src/alfred/models/ERRATA.md): Updated numbers for Goto subgoal evaluation.
 - [**THOR 2.1.0 Docs**](https://allenai.github.io/ai2thor-v2.1.0-documentation/installation): Deprecated documentation from Ai2-THOR 2.1.0 release.
 - [**FAQ**](doc/FAQ.md): Frequently Asked Questions. 
 
@@ -219,7 +219,7 @@ $ python scripts/docker_run.py --headless
   ## Everything works!!!
 ```
 
-You might have to modify `X_DISPLAY` in [gen/constants.py](gen/constants.py) depending on which display you use.
+You might have to modify `X_DISPLAY` in [gen/constants.py](src/alfred/gen/constants.py) depending on which display you use.
 
 ## Cloud Instance
 
@@ -248,7 +248,7 @@ $ python scripts/check_thor.py
 ## Everything works!!!
 ```
 
-You might have to modify `X_DISPLAY` in [gen/constants.py](gen/constants.py) depending on which display you use.
+You might have to modify `X_DISPLAY` in [gen/constants.py](src/alfred/gen/constants.py) depending on which display you use.
 
 Also, checkout this guide: [Setting up THOR on Google Cloud](https://medium.com/@etendue2013/how-to-run-ai2-thor-simulation-fast-with-google-cloud-platform-gcp-c9fcde213a4a)
 
@@ -275,7 +275,7 @@ MIT License
 ## Change Log
 
 14/10/2020:
-- Added [errata](models/ERRATA.md) for `Goto` subgoal evaluation. 
+- Added [errata](src/alfred/models/ERRATA.md) for `Goto` subgoal evaluation. 
 
 28/10/2020:
 - Added `--use_templated_goals` option to train with templated goals instead of human-annotated goal descriptions.
