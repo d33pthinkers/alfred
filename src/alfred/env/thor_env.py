@@ -5,8 +5,8 @@ import alfred.gen.utils.image_util as image_util
 import cv2
 import numpy as np
 from ai2thor.controller import Controller
-from alfred.gen import as constants
 from alfred.env.tasks import get_task
+from alfred.gen import constants
 from alfred.gen.utils import game_util
 from alfred.gen.utils.game_util import (
     get_obj_of_type_closest_to_obj,
